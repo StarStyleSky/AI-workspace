@@ -8,7 +8,7 @@
 * [A Survey on Efficient Inference for Large Language Models](https://arxiv.org/pdf/2404.14294) |  22 Apr 2024 | Infinigence-AI
 * [Efficient Large Language Models: A Survey](https://arxiv.org/abs/2312.03863) | 23 May 2024 | AWS
 * [Beyond Efficiency: A Systematic Survey of Resource-Efficient Large Language Models](https://arxiv.org/abs/2401.00625) | 1 Jan 2024 |
-* [Towards Efficient Generative Large Language Model Serving: A Survey from Algorithms to Systems](https://arxiv.org/abs/2312.15234) | 23 Dec 2023 |
+* [Towards Efficient Generative Large Language Model Serving: A Survey from Algorithms to Systems](https://arxiv.org/abs/2312.15234) | 23 Dec 2023 | CMU
 * [Challenges and Applications of Large Language Models](https://arxiv.org/pdf/2307.10169.pdf) | 19 Jul 2023 | University College London
 * 
 ## AI State of Art Model
