@@ -13,7 +13,7 @@
 * 
 ## AI State of Art Model
 paper&technical paper
-* [deepseek r1]()
+* [deepseek r1](https://arxiv.org/abs/2501.12948)
 * [deepseekv3](https://github.com/deepseek-ai/DeepSeek-V3/blob/main/DeepSeek_V3.pdf) |26 Dec 2024 | Deepseek
 
 ## AI benchmark
