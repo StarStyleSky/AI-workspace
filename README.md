@@ -13,8 +13,8 @@
 * 
 ## AI State of Art Model
 paper&technical paper
-* [deepseek r1](https://arxiv.org/abs/2501.12948)
-* [deepseekv3](https://github.com/deepseek-ai/DeepSeek-V3/blob/main/DeepSeek_V3.pdf) |26 Dec 2024 | Deepseek
+* [deepseek r1](https://arxiv.org/abs/2501.12948) | 22 Jan 2025 | DeepSeek
+* [deepseek v3](https://github.com/deepseek-ai/DeepSeek-V3/blob/main/DeepSeek_V3.pdf) |26 Dec 2024 | DeepSeek
 
 ## AI benchmark
 * [LLM-Inference-Bench: Inference Benchmarking of Large Language Models on AI Accelerators](https://arxiv.org/abs/2411.00136) | 31 Oct 2024 | Argonne National Laboratory
