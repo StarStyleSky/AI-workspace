@@ -184,6 +184,7 @@ MoE: overlapping of alltoall & compute
 *   [Fast Inference of Mixture-of-Experts Language Models with Offloading](https://arxiv.org/pdf/2312.17238) | 28 Dec 2023 | Moscow Institute of Physics and Technology
 *   [HOBBIT: A Mixed Precision Expert Offloading System for Fast MoE Inference](https://arxiv.org/pdf/2411.01433) |6 Nov 2024 | shanghai jiaotong University&CUHK
 *   [FlexInfer: Breaking Memory Constraint via Flexible and Efficient Offloading for On-Device LLM Inference](https://arxiv.org/pdf/2503.03777)
+*   [MOE-INFINITY: Efficient MoE Inference on Personal Machines with Sparsity-Aware Expert Cache](https://arxiv.org/pdf/2401.14361) | 12 Mar 2025 | The University of Edinburgh
 
 ### Parameter Sharing
 
