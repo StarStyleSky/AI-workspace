@@ -98,9 +98,10 @@ Chips Survey
 
 ### Finetune
 
-*
+* [LORA: LOW-RANK ADAPTATION OF LARGE LANGUAGE MODELS](https://arxiv.org/pdf/2106.09685) |16 Oct 2021 | microsoft&cmu
 
 ### Parallelism training
+* [WLB-LLM: Workload-Balanced 4D Parallelism for Large Language Model Training](https://arxiv.org/pdf/2503.17924) | 23 Mar 2025 | Meta&University of California, San Diego
 
 #### TP
 
@@ -112,6 +113,7 @@ Chips Survey
 *   [DualPipe](https://arxiv.org/pdf/2412.19437)
 
 #### DP
+* [FSDP](https://pytorch.org/tutorials/intermediate/FSDP_tutorial.html#getting-started-with-fully-sharded-data-parallel-fsdp)
 
 #### SP/CP
 
@@ -157,7 +159,9 @@ head level
 ### Overlapping
 
 Communication & Compute: tensor parallelism & communication
-
+* [CuBLASMp](https://docs.nvidia.com/cuda/cublasmp/release_notes/index.html) | nvidia
+* [FlashOverlap: A Lightweight Design for Efficiently Overlapping Communication and Computation](https://arxiv.org/pdf/2504.19519) | 28 Apr 2025 | pk&infini-ai
+* [Triton-distributed: Programming Overlapping Kernels on Distributed AI Systems with the Triton Compiler](https://arxiv.org/pdf/2504.19442) | 4 May 2025 | PK&seed
 *   [TileLink: Generating Efficient Compute-Communicatio](https://arxiv.org/pdf/2503.20313)
 *   [NanoFlow: Towards Optimal Large Language Model Serving Throughput](https://arxiv.org/pdf/2408.12757) | 22 Aug 2024 | UW
 *   [FLUX: FAST SOFTWARE-BASED COMMUNICATION OVERLAP ON GPUS THROUGH KERNEL FUSION](https://arxiv.org/pdf/2406.06858) | 23 Oct 2024 | ByteDance
@@ -185,6 +189,7 @@ MoE: overlapping of alltoall & compute
 *   [HOBBIT: A Mixed Precision Expert Offloading System for Fast MoE Inference](https://arxiv.org/pdf/2411.01433) |6 Nov 2024 | shanghai jiaotong University&CUHK
 *   [FlexInfer: Breaking Memory Constraint via Flexible and Efficient Offloading for On-Device LLM Inference](https://arxiv.org/pdf/2503.03777)
 *   [MOE-INFINITY: Efficient MoE Inference on Personal Machines with Sparsity-Aware Expert Cache](https://arxiv.org/pdf/2401.14361) | 12 Mar 2025 | The University of Edinburgh
+*   [Smart-Infinity: Fast Large Language Model Training using Near-Storage Processing on a Real System](https://arxiv.org/pdf/2403.06664) | 11 Mar 2024 | 
 
 ### Parameter Sharing
 
@@ -241,7 +246,7 @@ The quadratic complexity of self-attention in a vanilla Transformer is well-know
 *   [Fast and Expressive LLM Inference with RadixAttention and SGLang](https://arxiv.org/abs/2312.07104) | 6 Jun 2024 | Stanford University
 
 ### DeepSeek Open Day
-
+https://github.com/deepseek-ai/open-infra-index?tab=readme-ov-file#day-6---one-more-thing-deepseek-v3r1-inference-system-overview
 * [DeepSeek-NSA]()
 * [FlashMLA]()
 * [DualPipe]()
