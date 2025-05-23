@@ -1,6 +1,8 @@
 # Awesome AI Everything
 
 ## AI LLM Survey
+*   [A Survey on Test-Time Scaling in Large Language Models:What, How, Where, and How Well](https://arxiv.org/pdf/2503.24235)
+*   [Stop Overthinking: A Survey on Efficient Reasoning for Large Language Models](https://arxiv.org/pdf/2503.16419)
 
 *   [Thus Spake Long-Context Large Language Model](https://arxiv.org/pdf/2502.17129) |24 Feb 2025| Shanghai AI Lab\&huawei\&fudan
 *   [A Survey on Inference Optimization Techniques for Mixture of Experts Models](https://arxiv.org/pdf/2412.14219) |Dec 2024 | CUHK Univresity\&shang hai jiao tong University
@@ -11,6 +13,8 @@
 *   [Beyond Efficiency: A Systematic Survey of Resource-Efficient Large Language Models](https://arxiv.org/abs/2401.00625) | 1 Jan 2024 |
 *   [Towards Efficient Generative Large Language Model Serving: A Survey from Algorithms to Systems](https://arxiv.org/abs/2312.15234) | 23 Dec 2023 | CMU
 *   [Challenges and Applications of Large Language Models](https://arxiv.org/pdf/2307.10169.pdf) | 19 Jul 2023 | University College London
+*   [Towards Efficient Mixture of Experts: A Holistic Study of Compression Techniques](https://arxiv.org/pdf/2406.02500)
+*   [Unlocking Efficiency in Large Language Model Inference: A Comprehensive Survey of Speculative Decoding](https://arxiv.org/pdf/2401.07851v2)
 
 ## AI State of Art Model
 
@@ -32,11 +36,12 @@ paper\&technical paper
 *   [Mamba](https://arxiv.org/abs/2312.00752): Linear-Time Sequence Modeling with Selective State Spaces | 31 May 2024 | CMU
 
 ### MoE
-* [MoE review](https://arxiv.org/pdf/2209.01667)
-* [DeepSeek MoE](https://arxiv.org/pdf/2401.06066)
-* [MiniMax 01](https://arxiv.org/pdf/2501.08313)
-* [Mixtral 8x7b](https://arxiv.org/pdf/2401.04088)
-* [GROK]()
+
+*   [MoE review](https://arxiv.org/pdf/2209.01667)
+*   [DeepSeek MoE](https://arxiv.org/pdf/2401.06066)
+*   [MiniMax 01](https://arxiv.org/pdf/2501.08313)
+*   [Mixtral 8x7b](https://arxiv.org/pdf/2401.04088)
+*   [GROK]()
 
 ## AI Chips
 
@@ -55,7 +60,7 @@ Chips Survey
 
 | #     | FLOPs dense fp16 | HBM   | Bandwidth | L2 cache | NV link | PCIe    | Architecture |
 | ----- | ---------------- | ----- | --------- | -------- | ------- | ------- | ------------ |
-| GB200 | 5P               | 192GB | 8.0TB/s   |          | 1.8TB/s | 128GB/s | blackwell    |
+| GB200 | 5P               | 384GB | 8.0TB/s   |          | 1.8TB/s | 128GB/s | blackwell    |
 | GH200 | 985T             | 141GB | 4.8TB/s   | 60MB     | 900GB/s | 128GB/s | hopper       |
 | H100  | 985T             | 80GB  | 3.35TB/s  | 50MB     | 900GB/s | 128GB/s | hopper       |
 | H800  | 985T             | 80GB  | 3.35TB/s  | 50MB     | 400GB/s | 64GB/s  | hopper       |
@@ -94,14 +99,23 @@ Chips Survey
 
 ### PIM/NDP
 
+*   [PIM Is All You Need: A CXL-Enabled GPU-Free System for Large Language Model Inference](https://arxiv.org/pdf/2502.07578)
+*   [Make LLM Inference Affordable to Everyone: Augmenting GPU Memory with NDP-DIMM](https://arxiv.org/pdf/2502.16963)
+
 ## AI Training Optimization
+
+### MoE training
+
+*   [MoC-System: Efficient Fault Tolerance for Sparse Mixture-of-Experts Model Training](https://arxiv.org/pdf/2408.04307)
 
 ### Finetune
 
-* [LORA: LOW-RANK ADAPTATION OF LARGE LANGUAGE MODELS](https://arxiv.org/pdf/2106.09685) |16 Oct 2021 | microsoft&cmu
+*   [LORA: LOW-RANK ADAPTATION OF LARGE LANGUAGE MODELS](https://arxiv.org/pdf/2106.09685) |16 Oct 2021 | microsoft\&cmu
 
 ### Parallelism training
-* [WLB-LLM: Workload-Balanced 4D Parallelism for Large Language Model Training](https://arxiv.org/pdf/2503.17924) | 23 Mar 2025 | Meta&University of California, San Diego
+
+*   [WLB-LLM: Workload-Balanced 4D Parallelism for Large Language Model Training](https://arxiv.org/pdf/2503.17924) | 23 Mar 2025 | Meta\&University of California, San Diego
+*   [Mist: Efficient Distributed Training of Large Language Models via Memory-Parallelism Co-Optimization](https://arxiv.org/pdf/2503.19050)
 
 #### TP
 
@@ -113,7 +127,8 @@ Chips Survey
 *   [DualPipe](https://arxiv.org/pdf/2412.19437)
 
 #### DP
-* [FSDP](https://pytorch.org/tutorials/intermediate/FSDP_tutorial.html#getting-started-with-fully-sharded-data-parallel-fsdp)
+
+*   [FSDP](https://pytorch.org/tutorials/intermediate/FSDP_tutorial.html#getting-started-with-fully-sharded-data-parallel-fsdp)
 
 #### SP/CP
 
@@ -138,11 +153,17 @@ Chips Survey
 ### Quantization
 
 *   [QServe: W4A8KV4 Quantization and System Co-design for Efficient LLM Serving](https://arxiv.org/pdf/2405.04532)
+*   [COMET: Towards Practical W4A4KV4 LLMs Serving](https://arxiv.org/pdf/2410.12168)
 
 ### Pruning
 
-layer levlel
-head level
+*   [layer levlel]()
+*   [head level]()
+*   [channel level]()
+
+### Decomposition
+
+*   [ESPACE: Dimensionality Reduction of Activations for Model Compression](https://arxiv.org/pdf/2410.05437)
 
 ### Distilling
 
@@ -150,18 +171,24 @@ head level
 
 ### Sparse
 
-*   [to do]()
+*   [LServe: Efficient Long-sequence LLM Serving with Unified Sparse Attention](https://arxiv.org/pdf/2502.14866)
+*   [SpInfer: Leveraging Low-Level Sparsity for Efficient Large Language Model Inference on GPUs](https://www.cse.ust.hk/\~weiwa/papers/eurosys25-fall-spinfer.pdf)
 
 ### Fusion
 
-*   [to do]()
+*   [FFN FUSION: RETHINKING SEQUENTIAL COMPUTATION IN LARGE LANGUAGE MODELS](https://arxiv.org/pdf/2503.18908)
+*   
+### Heterogeneous Speculative Decoding
+*   [Dovetail: A CPU/GPU Heterogeneous Speculative Decoding for LLM inference](https://arxiv.org/pdf/2412.18934)
+*   [DuoDecoding: Hardware-aware Heterogeneous Speculative Decoding with Dynamic Multi-Sequence Drafting](https://arxiv.org/pdf/2503.00784)
 
 ### Overlapping
 
 Communication & Compute: tensor parallelism & communication
-* [CuBLASMp](https://docs.nvidia.com/cuda/cublasmp/release_notes/index.html) | nvidia
-* [FlashOverlap: A Lightweight Design for Efficiently Overlapping Communication and Computation](https://arxiv.org/pdf/2504.19519) | 28 Apr 2025 | pk&infini-ai
-* [Triton-distributed: Programming Overlapping Kernels on Distributed AI Systems with the Triton Compiler](https://arxiv.org/pdf/2504.19442) | 4 May 2025 | PK&seed
+
+*   [CuBLASMp](https://docs.nvidia.com/cuda/cublasmp/release_notes/index.html) | nvidia
+*   [FlashOverlap: A Lightweight Design for Efficiently Overlapping Communication and Computation](https://arxiv.org/pdf/2504.19519) | 28 Apr 2025 | pk\&infini-ai
+*   [Triton-distributed: Programming Overlapping Kernels on Distributed AI Systems with the Triton Compiler](https://arxiv.org/pdf/2504.19442) | 4 May 2025 | PK\&seed
 *   [TileLink: Generating Efficient Compute-Communicatio](https://arxiv.org/pdf/2503.20313)
 *   [NanoFlow: Towards Optimal Large Language Model Serving Throughput](https://arxiv.org/pdf/2408.12757) | 22 Aug 2024 | UW
 *   [FLUX: FAST SOFTWARE-BASED COMMUNICATION OVERLAP ON GPUS THROUGH KERNEL FUSION](https://arxiv.org/pdf/2406.06858) | 23 Oct 2024 | ByteDance
@@ -169,12 +196,21 @@ Communication & Compute: tensor parallelism & communication
 *   [Domino: Eliminating Communication in LLM Training via Generic Tensor Slicing and Overlapping](https://arxiv.org/pdf/2409.15241v1) | 23 Sep 2024 |Microsoft
 *   [T3: Transparent Tracking & Triggering for Fine-grained Overlap of Compute & Collectives](https://arxiv.org/pdf/2401.16677) | 30 Jan 2024 | AMD
 
-MoE: overlapping of alltoall & compute
+MoE: overlapping of alltoall & compute & inference system
 
 *   [LANCET: ACCELERATING MIXTURE-OF-EXPERTS TRAINING VIA WHOLE G RAPH C OMPUTATION -C OMMUNICATION O VERLAPPING](https://arxiv.org/pdf/2404.19429) | 30 Apr 2024 | AWS
 *   [TUTEL: ADAPTIVE MIXTURE-OF-EXPERTS AT SCALE](https://arxiv.org/pdf/2206.03382) | 5 Jun 2023 | Microsoft
 *   [MegaScale infer](https://arxiv.org/pdf/2504.02263) | byte dance seed
 *   [Comet: Fine-grained Computation-communication Overlapping for Mixture-of-Experts](https://arxiv.org/pdf/2502.19811)
+*   [Klotski: Efficient Mixture-of-Expert Inference via Expert-Aware Multi-Batch Pipeline](https://arxiv.org/pdf/2502.06888)
+*   [MiLo: Efficient Quantized MoE Inference with Mixture of Low-Rank Compensators](https://arxiv.org/pdf/2504.02658)
+*   [Delta Decompression for MoE-based LLMs Compression](https://arxiv.org/pdf/2502.17298)
+*   [Not All Experts are Equal: Efficient Expert Pruning and Skipping for Mixture-of-Experts Large Language Models](https://arxiv.org/pdf/2402.14800)
+*   [DAOP: Data-Aware Offloading and Predictive Pre-Calculation for Efficient MoE Inference](http://arxiv.org/pdf/2501.10375)
+
+### MoE route
+
+*   [Dynamic Language Group-based MoE: Enhancing Code-Switching Speech Recognition with Hierarchical Routing](https://arxiv.org/pdf/2407.18581)
 
 ### Offloading
 
@@ -186,16 +222,27 @@ MoE: overlapping of alltoall & compute
 *   [InstInfer: In-Storage Attention Offloading for Cost-Effective Long-Context LLM Inference](https://arxiv.org/pdf/2409.04992) | 8 Sep 2024 |
 *   [Neo: Saving GPU Memory Crisis with CPU Offloading for Online LLM Inference](https://arxiv.org/pdf/2411.01142) | 2 Nov 2024 | PeKing University
 *   [Fast Inference of Mixture-of-Experts Language Models with Offloading](https://arxiv.org/pdf/2312.17238) | 28 Dec 2023 | Moscow Institute of Physics and Technology
-*   [HOBBIT: A Mixed Precision Expert Offloading System for Fast MoE Inference](https://arxiv.org/pdf/2411.01433) |6 Nov 2024 | shanghai jiaotong University&CUHK
+*   [HOBBIT: A Mixed Precision Expert Offloading System for Fast MoE Inference](https://arxiv.org/pdf/2411.01433) |6 Nov 2024 | shanghai jiaotong University\&CUHK
 *   [FlexInfer: Breaking Memory Constraint via Flexible and Efficient Offloading for On-Device LLM Inference](https://arxiv.org/pdf/2503.03777)
 *   [MOE-INFINITY: Efficient MoE Inference on Personal Machines with Sparsity-Aware Expert Cache](https://arxiv.org/pdf/2401.14361) | 12 Mar 2025 | The University of Edinburgh
-*   [Smart-Infinity: Fast Large Language Model Training using Near-Storage Processing on a Real System](https://arxiv.org/pdf/2403.06664) | 11 Mar 2024 | 
+*   [Smart-Infinity: Fast Large Language Model Training using Near-Storage Processing on a Real System](https://arxiv.org/pdf/2403.06664) | 11 Mar 2024 |
+*   [Glinthawk: A Two-Tiered Architecture for Offline LLM Inference](https://arxiv.org/pdf/2501.11779) | 11 Feb 2025 | microsoft
+*   [Fast State Restoration in LLM Serving with HCache](https://arxiv.org/pdf/2410.05004)
+*   [Efficient and Economic Large Language Model Inference with Attention Offloading](https://arxiv.org/html/2405.01814v1)
+
+### hybrid batches
+
+*   [POD-Attention: Unlocking Full Prefill-Decode Overlap for Faster LLM Inference](https://arxiv.org/pdf/2410.18038)
 
 ### Parameter Sharing
 
 *   [MHA]()
 *   [GQA](https://arxiv.org/pdf/2305.13245)
 *   [MLA](https://arxiv.org/pdf/2405.04434)
+
+### LORA
+
+*   [DoRA: Weight-Decomposed Low-Rank Adaptation](https://arxiv.org/pdf/2402.09353)
 
 ### Attention optimization
 
@@ -237,7 +284,9 @@ The quadratic complexity of self-attention in a vanilla Transformer is well-know
 *   [MemServe: Context Caching for Disaggregated LLM Serving with Elastic Memory Pool](https://arxiv.org/abs/2406.17565) | 26 Jun 2024 | huawei cloud
 *   [Inference without Interference: Disaggregate LLM Inference for Mixed Downstream Workloads](https://arxiv.org/abs/2401.11181) | 20 Jan 2024 | huawei cloud
 *   [Splitwise: Efficient Generative LLM Inference Using Phase Splitting](https://arxiv.org/pdf/2311.18677) | 20 May 2024 | Microsoft
-*   [DistServe: Disaggregating Prefill and Decoding for Goodput-optimized Large Language Model Serving](https://arxiv.org/pdf/2401.09670) | 6 Jun 2024 | PK&StepFun
+*   [DistServe: Disaggregating Prefill and Decoding for Goodput-optimized Large Language Model Serving](https://arxiv.org/pdf/2401.09670) | 6 Jun 2024 | PK\&StepFun
+*   [semi-PD: TOWARDS EFFICIENT LLM SERVING VIA PHASE-WISE
+    DISAGGREGATED COMPUTATION AND UNIFIED STORAGE](https://arxiv.org/pdf/2504.19867)
 
 ### Prefill optimization
 
@@ -246,15 +295,17 @@ The quadratic complexity of self-attention in a vanilla Transformer is well-know
 *   [Fast and Expressive LLM Inference with RadixAttention and SGLang](https://arxiv.org/abs/2312.07104) | 6 Jun 2024 | Stanford University
 
 ### DeepSeek Open Day
-https://github.com/deepseek-ai/open-infra-index?tab=readme-ov-file#day-6---one-more-thing-deepseek-v3r1-inference-system-overview
-* [DeepSeek-NSA]()
-* [FlashMLA]()
-* [DualPipe]()
-* [DeepEP]()
-* [3FS]()
-* [DeepSeek inference system]()
-* [EPLB]()
-* [DeepGEMM]()
+
+<https://github.com/deepseek-ai/open-infra-index?tab=readme-ov-file#day-6---one-more-thing-deepseek-v3r1-inference-system-overview>
+
+*   [DeepSeek-NSA]()
+*   [FlashMLA]()
+*   [DualPipe]()
+*   [DeepEP]()
+*   [3FS]()
+*   [DeepSeek inference system]()
+*   [EPLB]()
+*   [DeepGEMM]()
 
 ## AI Inference\&serving Framework
 
@@ -282,4 +333,6 @@ https://github.com/deepseek-ai/open-infra-index?tab=readme-ov-file#day-6---one-m
 
 *   [MegaScale: Scaling Large Language Model Training to More Than 10,000 GPUs](https://arxiv.org/pdf/2402.15627) | 23 Feb 2024 | ByteDance
 *   [OPT: Open Pre-trained Transformer Language Models](https://arxiv.org/pdf/2205.01068) | 21 Jun 2022 | Meta
+*   [From bare metal to a 70B model: infrastructure set-up and scripts](https://imbue.com/research/70b-infrastructure/) | Imbue
+*   [Insights into DeepSeek-V3: Scaling Challenges and Reflections on Hardware for AI Architectures](https://www.arxiv.org/pdf/2505.09343) | 14 May 2025 | DeepSeek
 
