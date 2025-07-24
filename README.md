@@ -1,6 +1,7 @@
 # Awesome AI Everything
 
 ## AI LLM Survey
+*   [A Survey on Inference Engines for Large Language Models: Perspectives on Optimization and Efficiency](https://arxiv.org/pdf/2505.01658) |8 May 2025| Korea Electronics Technology Institute 
 *   [A Survey on Test-Time Scaling in Large Language Models:What, How, Where, and How Well](https://arxiv.org/pdf/2503.24235)
 *   [Stop Overthinking: A Survey on Efficient Reasoning for Large Language Models](https://arxiv.org/pdf/2503.16419)
 
@@ -15,6 +16,7 @@
 *   [Challenges and Applications of Large Language Models](https://arxiv.org/pdf/2307.10169.pdf) | 19 Jul 2023 | University College London
 *   [Towards Efficient Mixture of Experts: A Holistic Study of Compression Techniques](https://arxiv.org/pdf/2406.02500)
 *   [Unlocking Efficiency in Large Language Model Inference: A Comprehensive Survey of Speculative Decoding](https://arxiv.org/pdf/2401.07851v2)
+*   [LLMCompass: Enabling Efficient Hardware Design for Large Language Model Inference](https://parallel.princeton.edu/papers/isca24_llmcompass.pdf)
 
 ## AI State of Art Model
 
@@ -60,7 +62,7 @@ Chips Survey
 
 | #     | FLOPs dense fp16 | HBM   | Bandwidth | L2 cache | NV link | PCIe    | Architecture |
 | ----- | ---------------- | ----- | --------- | -------- | ------- | ------- | ------------ |
-| GB200 | 5P               | 384GB | 8.0TB/s   |          | 1.8TB/s | 128GB/s | blackwell    |
+| GB200 | 5P               | 384GB | 8.0TB/s   | 126MB       | 1.8TB/s | 128GB/s | blackwell    |
 | GH200 | 985T             | 141GB | 4.8TB/s   | 60MB     | 900GB/s | 128GB/s | hopper       |
 | H100  | 985T             | 80GB  | 3.35TB/s  | 50MB     | 900GB/s | 128GB/s | hopper       |
 | H800  | 985T             | 80GB  | 3.35TB/s  | 50MB     | 400GB/s | 64GB/s  | hopper       |
@@ -149,6 +151,7 @@ Chips Survey
 
 *   [Efficiently Scaling Transformer Inference](https://arxiv.org/abs/2211.05102) | Nov 2022 | Google
 *   [Accelerating LLM Inference Throughput via Asynchronous KV Cache Prefetching](https://arxiv.org/pdf/2504.06319)
+*   [Compress, Gather, and Recompute:REFORMing Long-Context Processing in Transformers](https://arxiv.org/pdf/2506.01215)
 
 ### Quantization
 
@@ -177,8 +180,14 @@ Chips Survey
 ### Fusion
 
 *   [FFN FUSION: RETHINKING SEQUENTIAL COMPUTATION IN LARGE LANGUAGE MODELS](https://arxiv.org/pdf/2503.18908)
-*   
-### Heterogeneous Speculative Decoding
+
+### Heterogeneous 
+Inference
+*   [HeteroLLM: Accelerating Large Language Model Inference on Mobile SoCs with Heterogeneous AI Accelerators](https://arxiv.org/pdf/2501.14794)
+*   [High-Throughput LLM inference on Heterogeneous Clusters](https://arxiv.org/pdf/2504.15303)
+*   [HETEGEN: HETEROGENEOUS PARALLEL INFERENCE FOR LARGE LANGUAGE MODELS ON RESOURCE-CONSTRAINED DEVICES](https://arxiv.org/pdf/2403.01164)
+
+Speculative Decoding
 *   [Dovetail: A CPU/GPU Heterogeneous Speculative Decoding for LLM inference](https://arxiv.org/pdf/2412.18934)
 *   [DuoDecoding: Hardware-aware Heterogeneous Speculative Decoding with Dynamic Multi-Sequence Drafting](https://arxiv.org/pdf/2503.00784)
 
@@ -272,6 +281,10 @@ The quadratic complexity of self-attention in a vanilla Transformer is well-know
 *   [Do We Really Need the KVCache for All Large Language Models](https://yywangcs.notion.site/Do-We-Really-Need-the-KVCache-for-All-Large-Language-Models-0c27c6c8f9d04420b899a09702980045) | blog
 *   [SeerAttention: Learning Intrinsic Sparse Attention in Your LLMs](https://arxiv.org/pdf/2410.13276) | 17 Feb 2025 | UHK\&UW\&Microsoft\&nvidia
 
+### Prefetching
+*   [Accelerating LLM Inference Throughput via Asynchronous KV Cache Prefetching](https://arxiv.org/pdf/2504.06319)
+*   [PRESERVE: Prefetching Model Weights and KV-Cache in Distributed LLM Serving](https://arxiv.org/pdf/2501.08192)
+
 ### MHA2MLA
 
 *   [Towards Economical Inference: Enabling DeepSeek’s Multi-Head Latent Attention in Any Transformer-based LLMs](https://arxiv.org/pdf/2502.14837)
@@ -285,8 +298,8 @@ The quadratic complexity of self-attention in a vanilla Transformer is well-know
 *   [Inference without Interference: Disaggregate LLM Inference for Mixed Downstream Workloads](https://arxiv.org/abs/2401.11181) | 20 Jan 2024 | huawei cloud
 *   [Splitwise: Efficient Generative LLM Inference Using Phase Splitting](https://arxiv.org/pdf/2311.18677) | 20 May 2024 | Microsoft
 *   [DistServe: Disaggregating Prefill and Decoding for Goodput-optimized Large Language Model Serving](https://arxiv.org/pdf/2401.09670) | 6 Jun 2024 | PK\&StepFun
-*   [semi-PD: TOWARDS EFFICIENT LLM SERVING VIA PHASE-WISE
-    DISAGGREGATED COMPUTATION AND UNIFIED STORAGE](https://arxiv.org/pdf/2504.19867)
+*   [semi-PD: TOWARDS EFFICIENT LLM SERVING VIA PHASE-WISE DISAGGREGATED COMPUTATION AND UNIFIED STORAGE](https://arxiv.org/pdf/2504.19867)
+*   [Injecting Adrenaline into LLM Serving: Boosting Resource Utilization and Throughput via Attention Disaggregation](https://arxiv.org/pdf/2503.20552)
 
 ### Prefill optimization
 
@@ -330,9 +343,12 @@ The quadratic complexity of self-attention in a vanilla Transformer is well-know
 *   [TVM: An Automated End-to-End Optimizing Compiler for Deep Learning](https://arxiv.org/pdf/1802.04799) | 5 Oct 2018 | University of Washington
 
 ## AI Infrastructure
-
+*   [Serving Large Language Models on Huawei CloudMatrix384](https://arxiv.org/pdf/2506.12708) | 15 Jun 2025 | Huawei
 *   [MegaScale: Scaling Large Language Model Training to More Than 10,000 GPUs](https://arxiv.org/pdf/2402.15627) | 23 Feb 2024 | ByteDance
 *   [OPT: Open Pre-trained Transformer Language Models](https://arxiv.org/pdf/2205.01068) | 21 Jun 2022 | Meta
 *   [From bare metal to a 70B model: infrastructure set-up and scripts](https://imbue.com/research/70b-infrastructure/) | Imbue
 *   [Insights into DeepSeek-V3: Scaling Challenges and Reflections on Hardware for AI Architectures](https://www.arxiv.org/pdf/2505.09343) | 14 May 2025 | DeepSeek
 
+
+## Network Connect
+* [UB-Mesh: a Hierarchically Localized nD-FullMesh Datacenter Network Architecture](https://arxiv.org/pdf/2503.20377) | 17 May 2025 | Huawei
